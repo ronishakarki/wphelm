@@ -21,7 +21,7 @@ wp:
       memory: "256Mi"
   configmap:
     ## KEY: "value"
-    WORDPRESS_DB_HOST: "wp-database.db.svc.cluster.local:3306"
+    WORDPRESS_DB_HOST: "wp-database.db.svc.cluster.local"
     WORDPRESS_DB_USER: wordpress
     WORDPRESS_DB_NAME: wordpress
     APP_ENV: dev
