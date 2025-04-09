@@ -8,7 +8,7 @@ db:
     repository: mariadb
     tag: 10.6.4-focal
     pullPolicy: Always
-  replicas: 3
+  replicas: 1
   configmap:
     ## KEY: "value"
     MYSQL_DATABASE: wordpress
