@@ -5,14 +5,14 @@ wp:
     env: dev
     stack: wordpress
   image:
-    repository: wordpress
-    tag: latest
+    repository: msalim22/wp
+    tag: v2
     pullPolicy: Always
-  replicas: 2
+  replicas: 3
   configmap:
     ## KEY: "value"
     APP_ENV: "dev"
-    WORDPRESS_DB_HOST: "wp-database.db.svc.cluster.local"
+    WORDPRESS_DB_HOST: "wp-database.wpdb.svc.cluster.local"
     WORDPRESS_DB_NAME: "wordpress"
     WORDPRESS_DB_USER: "wordpress"
   containerPorts:
